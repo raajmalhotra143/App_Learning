@@ -1,5 +1,4 @@
 import 'Basic.dart';
-import 'Basic.dart';
 import 'package:flutter/material.dart';
 
 String getFullName(String firstName, String lastName) {
