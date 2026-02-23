@@ -1,4 +1,9 @@
+import 'Basic.dart';
 import 'package:flutter/material.dart';
+
+String getFullName(String firstName, String lastName) {
+  return "$firstName $lastName"; //creating function here
+}
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +15,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    print(getFullName('John', 'Doe')); //function calling is doing here
+    Allfunctions();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
