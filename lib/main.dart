@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     debugPrint(getFullName('John', 'Doe')); //function calling is doing here
     allFunctions();
-    print("aa gae bhai");
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
