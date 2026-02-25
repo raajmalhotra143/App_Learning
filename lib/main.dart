@@ -22,17 +22,19 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const HomePage(),// Homepage creation
+      home: const HomePage(), // Homepage creation
     );
   }
 }
+
 // creating stateless widget just type stl
-class homepage extends StatelessWidget {
-  const homepage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(color: color.blue,);    // nothnig is shown in app cause 
-//override widget container is empty(Placeholder) filling something to view something 
+    return const Placeholder(color: Colors.blue,);
+    // nothnig is shown in app cause
+    //override widget container is empty(Placeholder) filling something to view something
   }
 }
