@@ -1,6 +1,6 @@
 // import 'package:myapp/Basic.dart'; this is the basic
-import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
 
 void main() {
   // All one-time function calls and initializations should go here.
@@ -32,6 +32,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: const Text('Home Page')),
+      body: const Center(child: Text('Hello World')),
+    );
   }
 }
