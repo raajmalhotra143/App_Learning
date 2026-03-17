@@ -11,6 +11,11 @@ void conditionalStatements() {
     debugPrint("Age is 20");
   }
 }
+//string concatination
+String getFullName(String firstName, String lastName) {
+  return "$firstName $lastName"; //creating function here
+}
+
 
 void listing() {
   // 1. Declaration
@@ -124,10 +129,11 @@ void nullsafety() {
   debugPrint('Step 5: Forced assertion and conversion: $upperEmail');
 }
 
-void allFunctions() {
+/*void allFunctions() {
+  debugPrint(getFullName('John', 'Doe')); 
   conditionalStatements();
   listing();
   sets();
   maps();
   nullsafety();
-}
+}*/

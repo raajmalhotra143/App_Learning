@@ -1,15 +1,12 @@
-import 'package:myapp/Basic.dart';
+// import 'package:myapp/Basic.dart'; this is the basic
 import 'package:flutter/material.dart';
 
-String getFullName(String firstName, String lastName) {
-  return "$firstName $lastName"; //creating function here
-}
 
 void main() {
   // All one-time function calls and initializations should go here.
-  debugPrint(getFullName('John', 'Doe')); //function calling is doing here
-  allFunctions();
-  
+  //function calling is doing here
+  // allFunctions();   this is the basic.dart full code
+
   runApp(const MyApp());
 }
 
@@ -35,8 +32,6 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(color: Colors.blue,);
-    // nothnig is shown in app cause
-    //override widget container is empty(Placeholder) filling something to view something
+    return const Placeholder();
   }
 }
