@@ -1,4 +1,4 @@
-import 'Basic.dart';
+import 'package:myapp/Basic.dart';
 import 'package:flutter/material.dart';
 
 String getFullName(String firstName, String lastName) {
@@ -6,6 +6,10 @@ String getFullName(String firstName, String lastName) {
 }
 
 void main() {
+  // All one-time function calls and initializations should go here.
+  debugPrint(getFullName('John', 'Doe')); //function calling is doing here
+  allFunctions();
+  
   runApp(const MyApp());
 }
 
@@ -15,8 +19,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    debugPrint(getFullName('John', 'Doe')); //function calling is doing here
-    allFunctions();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
