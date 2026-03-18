@@ -1,4 +1,4 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, dead_code
 import 'package:flutter/foundation.dart';
 
 void conditionalStatements() {
