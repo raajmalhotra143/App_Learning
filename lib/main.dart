@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/Basics/buttons.dart';
+import 'package:myapp/Basics/buttons.dart'; // this is importing the button
 
 void main() {
   runApp(const MyApp());
