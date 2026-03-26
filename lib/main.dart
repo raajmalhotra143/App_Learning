@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/Basics/buttons.dart';
-import 'package:myapp/Basics/new_button.dart';
+import 'package:myapp/Basics/buttons.dart';     // BasicButton
+import 'package:myapp/Basics/new_button.dart';  // MyButton
 
 void main() {
   runApp(const MyApp());
@@ -13,8 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
       home: const HomePage(),
     );
@@ -32,9 +34,18 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // BasicButton from buttons.dart
+            BasicButton(
+              text: 'Basic Button',
+              onPressed: () => debugPrint('Basic Button clicked!'),
+            ),
+            const SizedBox(height: 20),
+            // MyButton from new_button.dart
             MyButton(
-              text: 'Click Me',
-              onPressed: () => print('Button clicked!'),
+              text: 'New Button',
+              icon: Icons.star,
+              color: Colors.deepPurple,
+              onPressed: () => debugPrint('New Button clicked!'),
             ),
             const SizedBox(height: 20),
             const Text(
