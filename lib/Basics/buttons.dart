@@ -11,3 +11,12 @@ class MyButton extends StatelessWidget {
     return ElevatedButton(onPressed: onPressed, child: Text(text));
   }
 }
+class BanKai extends StatelessWidget {
+  const BanKai({super.key, required this.text, required this.onPressed});
+final String text;
+final VoidCallback onPressed; 
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
