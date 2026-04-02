@@ -1,13 +1,21 @@
-import 'package:flutter/material.dart';
+import "package:flutter/material.dart";
 
-class MyButton extends StatelessWidget {
-  final String text;
-  final VoidCallback onPressed;
-
-  const MyButton({super.key, required this.text, required this.onPressed});
+class Youme extends StatelessWidget {
+  const Youme({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: onPressed, child: Text(text));
+    return Scaffold(
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            print('button here'); // Fixed: Added semicolon
+          },
+          child: const Text(
+            'Click Me',
+          ), // Added child (ElevatedButton requires one)
+        ),
+      ),
+    ); // Fixed: Added semicolon
   }
 }
