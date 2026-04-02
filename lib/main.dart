@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-// BasicButton
-import 'package:myapp/Basics/new_button.dart'; // MyButton
+import 'package:myapp/Basics/buttons.dart';
 
-/*🔹 Easy analogy
-MaterialApp = 🏠 the house
-Scaffold = 🛏️ each room inside the house
-*/
 void main() {
   runApp(const MyApp());
 }
@@ -15,8 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Buttons(),
-    );
+    return const MaterialApp(home: Youme());
   }
 }
