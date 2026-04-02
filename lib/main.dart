@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/Basics/buttons.dart'; // this is importing the button
+import 'package:myapp/Basics/assets.dart'; // 👈 import this
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Youme());
+    return const MaterialApp(
+      home: Assets(),
+    );
   }
 }
